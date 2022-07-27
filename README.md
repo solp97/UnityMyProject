@@ -1,7 +1,7 @@
 #My Game Project
 ## 게임 개요
 - [2048](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)  
-- [컬러크러쉬](https://play.google.com/store/apps/details?id=com.dropout.ballgamegp0)  
+- [Color Crush](https://play.google.com/store/apps/details?id=com.dropout.ballgamegp0)  
 - [Sneak Out 3D](https://play.google.com/store/apps/details?id=com.mondayoff.sneak&hl=en&gl=US)  
 - [Traffix](https://play.google.com/store/apps/details?id=com.infinity.traffix&hl=ko&gl=HK)  
 - [Draw The line 3D](https://play.google.com/store/apps/details?id=com.friendsgamesincubator.drawtheline&hl=ko&gl=HK)

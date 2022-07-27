@@ -1,6 +1,4 @@
-#My Game Project
-## 게임 개요
-- [Color Crush](https://play.google.com/store/apps/details?id=com.dropout.ballgamegp0)  
+# My Game Project
 - [Stickman Hook](https://play.google.com/store/apps/details?id=com.mindy.grap1&hl=ko&gl=HK)
 
 ## 개발 환경

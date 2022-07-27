@@ -1,4 +1,4 @@
-# Unity 프로젝트 기획서 양식
+#My Game Project
 ## 게임 개요
 - [2048](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)  
 - [컬러크러쉬](https://play.google.com/store/apps/details?id=com.dropout.ballgamegp0)  

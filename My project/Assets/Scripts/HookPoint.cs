@@ -9,26 +9,29 @@ public class HookPoint : MonoBehaviour
     Vector2 GetMyPos;
 
     public GameObject Circle;
-    private bool IsShort = false;
-    public bool ShortDistance;
+    public bool ShortDistance = false;
     public bool HookAble = false;
+
+    private float distanceWihtPlayer;
+
 
     private void Awake()
     {
         renderer = GetComponent<SpriteRenderer>();
         transform = GetComponent<Transform>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.Instance.WhoIsClosest(GetMyPos);
+        /* WhoIsClosest(GetMyPos);*/
+        GameManager.Instance. AbleHookCount++;
 
         Debug.Log("플레이어 인식");
-        if(collision.gameObject.tag == "Player" && ShortDistance)
+        if(collision.gameObject.tag == "Player")
         {
             HookAble = true;
             Debug.Log("후크사용가능");
             GetMyPos = transform.position;
-            GameManager.Instance.AbleHookCount++;
             Circle.SetActive(true);
             renderer.color = Color.green;
             
@@ -37,7 +40,7 @@ public class HookPoint : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        IsShort = false;
+        ShortDistance = false;
         if (ShortDistance == false)
         {
             GameManager.Instance.AbleHookCount--;
@@ -47,5 +50,7 @@ public class HookPoint : MonoBehaviour
             renderer.color = Color.red;
         }
     }
+
+
 
 }

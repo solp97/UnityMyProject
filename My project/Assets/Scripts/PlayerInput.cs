@@ -14,9 +14,9 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+/*        if(Input.GetMouseButtonDown(0))
         {
             myPosition= myObject.transform.position;
-        }
+        }*/
     }
 }

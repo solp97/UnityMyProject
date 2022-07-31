@@ -5,15 +5,18 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public int AbleHookCount = 0;
+    public float ShortestDistanceToPlayer;
     public GameObject player;
+    
+    private Stage stage;
+
 
     private void Awake()
     {
+        stage = GetComponent<Stage>();
     }
-
-    public void WhoIsClosest(Vector2 HookPos)
+    private void Update()
     {
-      
+        
     }
-
 }

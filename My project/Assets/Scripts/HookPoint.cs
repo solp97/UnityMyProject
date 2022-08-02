@@ -38,9 +38,6 @@ public class HookPoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        /* WhoIsClosest(GetMyPos);*/
-        GameManager.Instance. AbleHookCount++;
-
         Debug.Log("플레이어 인식");
         if(collision.gameObject.tag == "Player" /*&& ShortDistance*/)
         {
@@ -56,11 +53,16 @@ public class HookPoint : MonoBehaviour
         ShortDistance = false;
         if (ShortDistance == false)
         {
-            GameManager.Instance.AbleHookCount--;
-            if (GameManager.Instance.AbleHookCount <= 0) GameManager.Instance.AbleHookCount = 0;
             Circle.SetActive(false);
             HookAble = false;
             renderer.color = Color.red;
         }
+    }
+
+    bool isClosest()
+    {
+
+
+        return ShortDistance;
     }
 }

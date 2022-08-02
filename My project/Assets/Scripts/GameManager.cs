@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public int AbleHookCount = 0;
     public float ShortestDistanceToPlayer;
     public GameObject player;
     private Stage stage;

@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class Stage : MonoBehaviour
 {
-    public GameObject[] HookPointObjects;
+    public HookPoint[] HookPointObjects;
+    public JumpPlatform[] JumpPlatformObjects;
+
+    public void Init()
+    {
+
+    }
 }

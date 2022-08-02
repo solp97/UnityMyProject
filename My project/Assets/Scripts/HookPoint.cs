@@ -10,11 +10,11 @@ public class HookPoint : MonoBehaviour
     public GameObject Circle;
     public Transform Player;
     public bool ShortDistance;
-    public bool HookAble;
     public float ShortestDist;
     public float distanceWihtPlayer;
     public Vector2 myVector2;
     private Transform myPos;
+    private bool HookAble;
 
 
     private void Awake()

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform Player;
+    Vector2 StartPos;
+    private void Start()
     {
-        
+         StartPos = Player.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Player.transform.position = StartPos;
     }
 }
